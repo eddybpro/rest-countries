@@ -34,7 +34,6 @@ html {
   --th1-color-bg: var(--th2-color-bg);
   --th1-color-elements: var(--th2-color-elements);
   --th1-color-txt: var(--th2-color-txt);
-  /* --th1-color-input: var(--th2-color-bg); */
 }
 
 .Head {
