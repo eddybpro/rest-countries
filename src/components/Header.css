@@ -58,7 +58,7 @@ header {
   font-weight: 600;
   color: var(--th1-color-txt);
   background-color: var(--th1-color-elements);
-  box-shadow: 0.5px 0.5px 10px var(--th1-color-input);
+  box-shadow: 0.5px 0.5px 10px var(--th1-color-bg);
 }
 
 .searchIcon {

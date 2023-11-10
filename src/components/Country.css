@@ -37,7 +37,7 @@ html {
   cursor: pointer;
   overflow: hidden;
   background-color: var(--th1-color-elements);
-  box-shadow: 0.5px 0.5px 12px var(--th1-color-input);
+  box-shadow: 0.5px 0.5px 12px var(--th1-color-bg);
 }
 
 .CountryBox-FlagImg {
