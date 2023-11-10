@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap");
+
+:root {
+  /* Light Mode */
+
+  --th1-color-bg: hsl(0, 0%, 98%);
+  --th1-color-elements: hsl(0, 0%, 100%);
+  --th1-color-txt: hsl(200, 15%, 8%);
+  --th1-color-input: hsl(0, 0%, 52%);
+
+  /* Dark Mode */
+
+  --th2-color-bg: hsl(207, 26%, 17%);
+  --th2-color-elements: hsl(209, 23%, 22%);
+  --th2-color-txt: hsl(0, 0%, 100%);
+
+  --font-nunito: "Nunito Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-nunito);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  padding-bottom: 3rem;
+  background-color: var(--th1-color-bg);
+}
+
+.FormBox {
+  padding: 2rem;
+}
+
+.FormBox-Label {
+  display: block;
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.FormBox-Input {
+  display: block;
+  width: 100%;
+  padding: 1.25rem 2rem 1.25rem 3rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--th1-color-txt);
+  background-color: var(--th1-color-elements);
+  box-shadow: 0.5px 0.5px 10px var(--th1-color-input);
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--th1-color-input);
+}
+
+.FormBox-Select {
+  padding: 1.25rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  color: var(--th1-color-txt);
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: var(--th1-color-elements);
+}
+
+.FormBox-Select > option {
+  text-transform: capitalize;
+  color: var(--th1-color-txt);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .FormBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .FormBox-Label {
+    margin-bottom: 0;
+  }
+}

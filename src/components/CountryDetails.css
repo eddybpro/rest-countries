@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap");
+
+:root {
+  /* Light Mode */
+
+  --th1-color-bg: hsl(0, 0%, 98%);
+  --th1-color-elements: hsl(0, 0%, 100%);
+  --th1-color-txt: hsl(200, 15%, 8%);
+  --th1-color-input: hsl(0, 0%, 52%);
+
+  /* Dark Mode */
+
+  --th2-color-bg: hsl(207, 26%, 17%);
+  --th2-color-elements: hsl(209, 23%, 22%);
+  --th2-color-txt: hsl(0, 0%, 100%);
+
+  --font-nunito: "Nunito Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-nunito);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Wrapper {
+  padding: 3rem 2rem;
+  background-color: var(--th1-color-bg);
+}
+
+.Wrapper-Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--th1-color-txt);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--th1-color-txt);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.DetailsBox-ImgBox {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.DetailsBox-ImgBox > img {
+  width: 100%;
+}
+
+.DetailsBox-TxtBox-Name {
+  font-size: 2.2rem;
+  color: var(--th1-color-txt);
+  margin-bottom: 2rem;
+}
+
+.DetailsBox-TxtBox-Box > div {
+  margin-bottom: 3rem;
+}
+
+.DetailsBox-TxtBox-Box > div > h3,
+.DetailsBox-TxtBox-BordersBox-Title {
+  font-size: 1.6rem;
+  color: var(--th1-color-input);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.DetailsBox-TxtBox-Box > div > h3 > span,
+.DetailsBox-TxtBox-BordersBox-Title > span {
+  color: var(--th1-color-txt);
+  text-transform: capitalize;
+}
+
+.DetailsBox-TxtBox-BordersBox-Btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.DetailsBox-TxtBox-BordersBox-Btns > button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1.6rem;
+  color: var(--th1-color-input);
+  background-color: var(--th1-color-bg);
+  outline: none;
+  border: 1px solid var(--th1-color-input);
+}
+
+@media screen and (min-width: 768px) {
+  .DetailsBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .DetailsBox-ImgBox {
+    margin-bottom: 0;
+  }
+
+  .DetailsBox-TxtBox-Box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .DetailsBox-TxtBox-BordersBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
